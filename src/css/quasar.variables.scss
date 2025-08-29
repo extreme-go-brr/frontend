@@ -1,0 +1,113 @@
+// src/css/quasar.variables.scss
+
+// ====================================================================
+// Variabel Tema untuk Light Mode (Default)
+// Ini adalah warna dasar yang akan digunakan ketika dark mode tidak aktif.
+// Gunakan variabel CSS (Custom Properties) untuk fleksibilitas runtime.
+// ====================================================================
+:root {
+  // Warna Utama (Primary Colors)
+  // Digunakan untuk tombol utama, header, atau elemen penting lainnya.
+  --q-primary: #082F6D; // Biru Quasar default
+  --q-primary-hover: #1565c0; // Sedikit lebih gelap untuk hover
+  --q-primary-text: #1d1d1d ; // Teks di atas primary
+
+  // Warna Sekunder (Secondary Colors)
+  // Digunakan untuk aksi sekunder atau elemen pendukung.
+  --q-secondary: #26a69a; // Teal Quasar default
+  --q-secondary-hover: #218f84;
+  --q-secondary-text: #ffffff;
+
+  // Warna Aksen (Accent Colors)
+  // Untuk penekanan atau elemen interaktif.
+  --q-accent: #9c27b0; // Ungu Quasar default
+  --q-accent-hover: #8e24aa;
+  --q-accent-text: #ffffff;
+
+  // Warna Status (Status Colors)
+  --q-positive: #21ba45; // Hijau untuk sukses
+  --q-negative: #c10015; // Merah untuk error
+  --q-info: #31ccec;    // Biru muda untuk info
+  --q-warning: #f2c037;  // Kuning untuk peringatan
+
+  // Warna Abu-abu (Grayscale)
+  // Untuk teks, border, dan latar belakang netral.
+  --q-dark: #1d1d1d; // Warna teks gelap (digunakan di light mode)
+  --q-dark-page: #ffffff; // Latar belakang halaman (light mode)
+
+  // Warna Teks
+  --q-text-color: #333333; // Warna teks utama
+  --q-text-color-light: #666666; // Warna teks sekunder/lebih terang
+
+  // Warna Latar Belakang
+  --q-body-background: #f0f0f0; // Latar belakang body utama
+  --q-card-background: #ffffff; // Latar belakang kartu
+  --q-input-background: #ffffff; // Latar belakang input
+ --q-item-background:#ffffff;
+  // Warna Border
+  --q-border-color: #e0e0e0; // Warna border umum
+}
+
+
+// ====================================================================
+// Variabel Tema untuk Dark Mode
+// Ini akan aktif ketika kelas `body--dark` ditambahkan ke elemen body.
+// ====================================================================
+.body--dark {
+  // Warna Utama (Primary Colors)
+  // Biasanya lebih terang atau kontras lebih tinggi di dark mode.
+  --q-primary: #4A90E2; // Biru muda untuk dark mode
+  --q-primary-hover: #42a5f5;
+  --q-primary-text: #fff; // Teks gelap di atas primary terang
+
+  // Warna Sekunder (Secondary Colors)
+  --q-secondary: #4db6ac; // Teal muda untuk dark mode
+  --q-secondary-hover: #26a69a;
+  --q-secondary-text: #1d1d1d;
+
+  // Warna Aksen (Accent Colors)
+  --q-accent: #ce93d8; // Ungu muda untuk dark mode
+  --q-accent-hover: #ba68c8;
+  --q-accent-text: #1d1d1d;
+
+  // Warna Status (Status Colors) - Bisa tetap sama atau disesuaikan
+  --q-positive: #69f0ae; // Hijau lebih terang
+  --q-negative: #ef9a9a; // Merah lebih terang
+  --q-info: #80deea;    // Biru muda lebih terang
+  --q-warning: #ffeb3b;  // Kuning lebih terang
+
+  // Warna Abu-abu (Grayscale)
+  --q-dark: #1D1D1D; // Warna teks terang (digunakan di dark mode)
+  --q-dark-page: #1A1A1A; // Latar belakang halaman (dark mode)
+
+  // Warna Teks
+  --q-text-color: #e0e0e0; // Warna teks utama untuk dark mode
+  --q-text-color-light: #aaaaaa; // Warna teks sekunder/lebih terang untuk dark mode
+
+  // Warna Latar Belakang
+  --q-item-background:#1A1A1A;
+  --q-card-background: #1A1A1A; // Latar belakang kartu untuk dark mode
+  --q-input-background: #333333; // Latar belakang input untuk dark mode
+  --q-body-background: #202124; // Latar belakang body utama untuk dark mode
+  // Warna Border
+  --q-border-color: #424242; // Warna border umum untuk dark mode
+}
+
+// ====================================================================
+// Variabel SCSS (Compile-time)
+// Ini adalah variabel yang digunakan oleh preprocessor SCSS.
+// Anda bisa menimpa variabel SCSS Quasar di sini,
+// tetapi untuk warna tema dinamis, variabel CSS lebih disarankan.
+// ====================================================================
+
+// Contoh menimpa variabel SCSS Quasar (jika diperlukan)
+// $primary: #1976d2;
+// $secondary: #26a69a;
+// $accent: #9c27b0;
+// $positive: #21ba45;
+// $negative: #c10015;
+// $info: #31ccec;
+// $warning: #f2c037;
+
+// $dark: #1d1d1d;
+// $dark-page: #121212; // Ini akan digunakan jika Anda menggunakan $dark-page di SCSS Anda

@@ -1,0 +1,56 @@
+{
+  "extends": "./.quasar/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "types": ["vite/client", "node"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "src/*": ["./src/*"],
+      "app/*": ["./*"],
+      "boot/*": ["src/boot/*"],
+      "components/*": ["src/components/*"],
+      "layouts/*": ["src/layouts/*"],
+      "pages/*": ["src/pages/*"],
+      "assets/*": ["src/assets/*"],
+      "stores/*": ["src/stores/*"],
+      "#q-app/wrappers": [".quasar/app-wrapper.d.ts"],
+      "quasar/wrappers": ["node_modules/quasar/wrappers/index.d.ts"]
+    }
+  },
+  "include": [
+    "types/env.d.ts",
+    ".quasar/**/*",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types-build/env.d.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".vscode-server",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
